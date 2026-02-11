@@ -10,8 +10,8 @@ public class PowerUpManager : MonoBehaviour
     [SerializeField] private float effectDuration = 10f;
 
     [Header("Paddle Settings")]
-    [SerializeField] private float expandedScale = 1.5f;
-    [SerializeField] private float shrunkScale = 0.5f;
+    [SerializeField] private float expandedScale = 6f;
+    [SerializeField] private float shrunkScale = 2f;
     [SerializeField] private float scaleTransitionSpeed = 5f;
 
     [Header("Ball Settings")]

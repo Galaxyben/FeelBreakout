@@ -176,11 +176,7 @@ public class PoolManager : MonoBehaviour
 	/// <param name="obj">The GameObject to despawn</param>
 	public static void Despawn(GameObject obj)
 	{
-		if (obj == null)
-		{
-			Debug.LogWarning("PoolManager.Despawn: object is null");
-			return;
-		}
+		if (!obj) return;
 
 		// Remove from active tracking
 		foreach (var activeSet in activeObjects.Values)

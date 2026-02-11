@@ -21,7 +21,7 @@ public class PowerUp : MonoBehaviour
     private void Update()
     {
         // Mover hacia abajo
-        transform.Translate(Vector3.down * fallSpeed * Time.deltaTime);
+        transform.Translate(Vector3.down * (fallSpeed * Time.deltaTime));
 
         // Destruir si sale de la pantalla
         if (transform.position.y < -6f)
